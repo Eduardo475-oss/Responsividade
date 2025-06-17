@@ -1,0 +1,14 @@
+#gallery {
+     & img {
+        margin-inline: auto;
+     }
+}
+
+@media (width >= 80em) {
+    #gallery {
+       & img {
+            width: 17.875rem;
+            height: 17.875rem;
+        }
+    }
+}

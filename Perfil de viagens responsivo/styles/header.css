@@ -1,0 +1,10 @@
+header {
+    & a:first-child {
+        margin-right: auto;
+    }
+
+    & a {
+        font: var(--text-md);
+        color: var(--text-color-secondary);
+    }
+}

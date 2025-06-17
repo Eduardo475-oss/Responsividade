@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --brand-color: #EF5F4C;
+    --background-color: #FFFFFF;
+    --surface-color: #F5F5F5;
+    --skeleton-color: #D9D9D9;
+    --shape-transparency: hsla(0, 0%, 100%, 0.562);
+    --text-color-primary: #313131;
+    --text-color-secondary: #6C6C6C;
+
+    --font-family: "Poppins", sans-serif;
+    --h1: bold 1.5rem/125% var(--font-family);
+    --text-md: normal 0.875rem/170% var(--font-family);
+    --text-sm: normal 0.75rem/170% var(--font-family);
+
+    --py-header: 1rem;
+    --py-about: 2rem;
+    --py-gallery: 1rem;
+    --py-footer: 1rem;
+    --px-lg: 1rem;
+
+    --px-about: 2rem;
+}
+
+body {
+    color: var(--text-color-secondary);
+    background-color: var(--background-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul [role="list"] {
+    list-style: none;
+}
+
+@media (width >= 80em) {
+    :root {
+        --h1: bold 2rem/125% var(--font-family);
+
+        --py-header: 1.25rem;
+        --py-gallery: 1.5rem;
+        --py-footer: 1.5rem;
+        --px-lg: 2rem;
+        --px-about: 2rem;
+    }
+}

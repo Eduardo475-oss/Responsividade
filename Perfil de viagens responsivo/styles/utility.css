@@ -1,0 +1,95 @@
+.container {
+    --max-width: 360px;
+    width: min(var(--max-width), 100% - var(--px-lg) * 2);
+    margin-inline: auto;
+}
+
+.container-about {
+    --max-width: 360px;
+    width: min(var(--max-width), 100% - var(--px-about) * 2);
+    margin-inline: auto;
+}
+
+
+.py-header {
+    padding-block: var(--py-header);
+}
+
+.py-about {
+    padding-block: var(--py-about);
+}
+
+.py-gallery {
+    padding-block: var(--py-gallery);
+}
+
+.py-footer {
+    padding-block: var(--py-footer);
+}
+
+.px-lg {
+    padding-block: var(--px-lg);
+}
+
+.gap {
+    gap: 1rem;
+}
+
+.gap-0\.5 {
+    gap: 0.5rem;
+}
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+.even-columns {
+    display: grid;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.desktop-only {
+    display: none;
+}
+
+.mobile-only {
+    display: initial;
+}
+
+.bg-color {
+    background-color: var(--surface-color);
+}
+
+@media (width >= 80em) {
+    .container {
+        --max-width: 80rem;
+    }
+
+    .container-about {
+        --max-width: 80rem;
+    }
+
+    .desktop-only {
+        display: initial;
+    }
+   
+    .mobile-only {
+        display: none;
+    }
+
+    .even-columns {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1.5rem;
+    }
+}
