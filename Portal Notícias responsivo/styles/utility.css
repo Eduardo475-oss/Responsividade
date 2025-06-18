@@ -1,0 +1,99 @@
+.container {
+    --max-width: 360px;
+    width: min(var(--max-width), 100% - var(--px-lg) * 2);
+    margin-inline: auto;
+}
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+.even-columns {
+    display: grid;
+}
+
+.desktop-only {
+    display: none;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.gap {
+    gap: 1rem;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+.py-header {
+    padding-block: var(--py-header);
+}
+
+.py-highlights {
+    padding-block: var(--py-highlights);
+}
+
+.py-most-read {
+    padding-block: var(--py-most-read);
+}
+
+.py-ia {
+    padding-block: var(--py-ia);
+}
+
+.py-ads {
+    padding-block: var(--py-ads);
+}
+
+.py-aside {
+    padding-block: var(--py-aside);
+}
+
+.blue-box {
+    display: inline-block;
+    background-color: var(--brand-color-dark);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+    font: 500 0.62rem/1.2 var(--font-family);
+}
+
+@media (width >= 80em) {
+    .container {
+        --max-width: 80rem;
+    }
+
+    .desktop-only {
+        display: initial;
+    }
+
+    & img {
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0.25rem;
+    }
+
+    .even-columns {
+        grid-auto-flow: column;
+    }
+
+    .even-columns-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+}

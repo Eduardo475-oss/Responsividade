@@ -5,8 +5,8 @@
 }
 
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -18,9 +18,44 @@
     --text-color-secondary: #CBD5E1;
 
     --font-family: "Archivo", sans-serif;
-    --h1: 800 1.5rem/135% var(--font-family);
-    --h2: 800 1rem/140% var(--font-family);
-    --h3: 800 0.875rem/140% var(--font-family);
-    --text-md: 600 0.875rem/145% var(--font-family);
-    --text-sm: 400 0.875rem/160% var(--font-family);
+    --text-lg: 800 1.5rem/135% var(--font-family);
+    --text-md: 800 1rem/140% var(--font-family);
+    --text-sm: 800 0.875rem/140% var(--font-family);
+    --text-sm-2: 600 0.875rem/145% var(--font-family);
+    --text-sm-3: 400 0.875rem/160% var(--font-family);
+
+    --py-header: 1rem 0.875rem;
+    --py-highlights: 1rem 2rem;
+    --py-most-read: 1rem 2rem;
+    --py-ia: 1rem 1rem;
+    --py-ads: 1rem 2rem;
+    --py-aside: 1rem;
+
+    --px-lg: 1rem;
+}
+
+.divider {
+    --max-width: 100%;
+    border: solid 1px var(--stroke-color);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color-primary);
+}
+
+@media (width >= 80em) {
+    :root {
+        --text-lg: 2rem var(--font-family);
+        --text-md: 1.5rem var(--font-family);
+        --text-sm: 1rem var(--font-family);
+        --text-sm-2: 1rem var(--font-family);
+        --text-sm-3: 1rem var(--font-family);
+
+        --py-header: 1.25rem 1.25rem;
+        --py-highlights: 1.25rem 5rem;
+        --py-most-read: 1rem 6.5rem;
+
+        --px-lg: 2rem;
+    }
 }
