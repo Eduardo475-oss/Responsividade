@@ -16,10 +16,6 @@
     display: grid;
 }
 
-.desktop-only {
-    display: none;
-}
-
 .justify-between {
     justify-content: space-between;
 }
@@ -73,11 +69,15 @@
     font: 500 0.62rem/1.2 var(--font-family);
 }
 
+.desktop-only {
+    display: none;
+}
+
 @media (width >= 80em) {
     .container {
         --max-width: 80rem;
     }
-
+    
     .desktop-only {
         display: initial;
     }

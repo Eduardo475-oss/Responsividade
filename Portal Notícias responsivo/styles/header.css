@@ -1,0 +1,26 @@
+header {
+    & #primary {
+        padding-bottom: 1rem;
+
+        & a {
+            font: var(--text-sm);
+            color: var(--text-color-primary);
+        }
+
+        & #tech {
+            font: var(--text-lg);
+            color: var(--brand-color-light);
+
+            text-transform: uppercase;
+        }
+    }
+
+    & #secondary {
+        padding-block: 0.875rem;
+
+        & a {
+            font: var(--text-sm2);
+            color: var(--text-color-secondary);
+        }
+}
+}
