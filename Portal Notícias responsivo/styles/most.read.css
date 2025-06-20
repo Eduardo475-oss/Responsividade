@@ -1,0 +1,73 @@
+#most-read {
+    & > div {
+        & #most {
+            font: var(--text-sm2);
+            color: var(--text-color-secondary);
+        }
+
+        & > span {
+            margin-right: auto;
+        }
+
+        & div:nth-child(2) {
+            gap: 0.25rem;
+        }
+
+    }
+
+    & figcaption {
+        text-align: left;
+    
+        position: absolute;
+        top: 0;
+    
+        padding: 1rem;
+    
+        & #title-1 {
+            font: var(--text-lg);
+            color: var(--text-color-primary);
+        }
+    
+        & h2 {
+            font: var(--text-sm2);
+            color: var(--text-color-primary);
+            margin-top: 0.5rem;
+        }
+    }
+
+    & p {
+        padding-top: 0.5rem;
+        padding-bottom: 2rem;
+
+        font: var(--text-sm);
+        color: var(--text-color-primary);
+
+        text-align: left;
+    }
+}
+
+@media (width >= 80em) {
+    #most-read {
+        & #fig-most {
+            display: flex;
+
+            gap: 1rem;
+
+            & p {
+                text-align: left;
+                width: 18rem;
+                height: 6rem;
+            }
+        }
+
+        & #arrow {
+            width: 1rem;
+            height: 1rem;
+        }
+
+        & img {
+            width: 18.25rem;
+            height: 10rem;
+        }
+    }
+}

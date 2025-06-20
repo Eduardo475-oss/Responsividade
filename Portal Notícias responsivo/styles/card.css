@@ -16,6 +16,13 @@
     }
 }
 
+.card-2{
+    border-radius: 0.25rem;
+    overflow: hidden;
+    position: relative;
+}
+
+
 figcaption {
     text-align: left;
 
