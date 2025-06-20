@@ -21,7 +21,7 @@
     --text-lg: 800 1.5rem/135% var(--font-family);
     --text-md: 800 1rem/140% var(--font-family);
     --text-sm: 800 0.875rem/140% var(--font-family);
-    --text-sm2: 600 0.875rem/145% var(--font-family);
+    --text-sm2: 600 0.875rem/140% var(--font-family);
     --text-sm3: 400 0.875rem/160% var(--font-family);
 
     --py-header: 1rem 0.875rem;
@@ -47,6 +47,10 @@ a {
     color: inherit;
 }
 
+img {
+    max-width: 100%;
+}
+
 body {
     background-color: var(--bg-color);
     color: var(--text-color-primary);
@@ -57,7 +61,7 @@ body {
         --text-lg: 800 2rem/135% var(--font-family);
         --text-md: 800 1.5rem/140% var(--font-family);
         --text-sm:  800 1rem/140% var(--font-family);
-        --text-sm2: 600 1rem/145% var(--font-family);
+        --text-sm2: 600 1rem/140% var(--font-family);
         --text-sm3: 400 1rem/160% var(--font-family);
 
         --py-header: 1.25rem 1.25rem;

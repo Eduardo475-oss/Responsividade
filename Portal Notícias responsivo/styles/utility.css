@@ -73,6 +73,10 @@
     display: none;
 }
 
+.mobile-only {
+    display: initial;
+}
+
 @media (width >= 80em) {
     .container {
         --max-width: 80rem;
@@ -95,5 +99,9 @@
 
     .even-columns-2 {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .mobile-only {
+        display: none;
     }
 }

@@ -1,0 +1,20 @@
+#highlights {
+    & img {
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0.25rem;
+    }
+
+
+    & #img-1 {
+        height: 26rem;
+    }
+}
+
+@media (width >= 80em) {
+    #highlights {
+        & #img-1 {
+            height: 100%;
+        }
+    }
+}
