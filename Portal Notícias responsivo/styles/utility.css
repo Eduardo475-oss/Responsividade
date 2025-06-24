@@ -60,6 +60,14 @@
     padding-block: var(--py-aside);
 }
 
+.margin-t {
+    margin-top: 1rem;
+}
+
+.margin-b {
+    margin-bottom: 1rem;
+}
+
 .blue-box {
     display: inline-block;
     background-color: var(--brand-color-dark);
