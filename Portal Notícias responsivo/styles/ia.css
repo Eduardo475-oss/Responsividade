@@ -1,0 +1,39 @@
+#ia {
+    & > div {
+        & #most {
+            font: var(--text-sm2);
+            color: var(--text-color-secondary);
+        }
+
+        & > span {
+            margin-right: auto;
+        }
+
+        & div:nth-child(2) {
+            gap: 0.25rem;
+        }
+
+    }
+
+    & #arrow {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    & img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    & h2 {
+        margin-top: 0.5rem;
+
+        font: var(--text-md);
+        color: var(--text-color-primary);
+    }
+
+    & p {
+        font: var(--text-sm3);
+        color: var(--text-color-secondary);
+    }
+}
