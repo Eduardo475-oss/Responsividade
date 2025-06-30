@@ -13,6 +13,7 @@
 
 @media (width >= 80em) {
     #highlights {
+        grid-area: highlights;
         & #img-1 {
             height: 100%;
         }

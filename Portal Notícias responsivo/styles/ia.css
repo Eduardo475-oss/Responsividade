@@ -1,5 +1,5 @@
 #ia {
-    & > div {
+    & > article {
         & #most {
             font: var(--text-sm2);
             color: var(--text-color-secondary);
@@ -9,7 +9,7 @@
             margin-right: auto;
         }
 
-        & div:nth-child(2) {
+        & a:nth-child(2) {
             gap: 0.25rem;
         }
 
@@ -35,5 +35,60 @@
     & p {
         font: var(--text-sm3);
         color: var(--text-color-secondary);
+    }
+}
+
+@media (width >= 80em) {
+    #ia {
+        max-width: 43.5rem;        
+        max-height: 53.5rem;
+        align-items: start;
+        grid-area: ia;
+
+        & article {
+            padding-block: 0.75rem 1.5rem;
+        }
+
+        & .marg {
+            margin-top: 2rem;
+        }
+
+        & div {
+
+            max-width: 43.5rem;
+            /* max-height: 11rem; */
+
+            & h2 {
+                font: var(--text-sm);
+                margin-top: 0.25rem;
+                text-align: left;
+            }
+
+            & p {
+                font: var(--text-sm3);
+                text-align: left;
+            }
+        }
+
+        & .blue-box {
+            width: 9.5rem;
+            /* height: 1.25rem; */
+        }
+
+        & .invert {
+            transform: scaleX(1);
+            direction: rtl;
+        }
+
+        & .text {
+            direction: ltr;
+        }
+
+        & img {
+            width: 11rem;
+            height: 11rem;
+            /* aspect-ratio: 1/1;
+            object-fit: cover; */
+        }
     }
 }

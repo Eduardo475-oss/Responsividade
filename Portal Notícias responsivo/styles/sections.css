@@ -1,0 +1,15 @@
+@media (width >= 80em) {
+    #ads {
+        img {
+            width: 30.5rem;
+            height: 17.5rem;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+        }
+    }
+
+    #other {
+        grid-area: other;
+        height: 53.5rem;
+    }
+}

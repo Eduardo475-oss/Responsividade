@@ -9,7 +9,7 @@
             margin-right: auto;
         }
 
-        & div:nth-child(2) {
+        & a:nth-child(2) {
             gap: 0.25rem;
         }
     }
@@ -34,5 +34,23 @@
     & p {
         font: var(--text-sm3);
         color: var(--text-color-secondary);
+    }
+}
+
+@media (width >= 80em) {
+    #aside {
+        & div {
+            margin-bottom: 1.38rem;
+        }
+
+       & h2 {
+        font: var(--text-sm);
+       }
+
+       & .blue-box {
+        width: 9.5rem;
+        /* height: 1.25rem; */
+    }
+
     }
 }

@@ -34,6 +34,8 @@
     --px-lg: 1rem;
 }
 
+
+
 .divider {
     border: solid 1px var(--stroke-color);
 }
@@ -62,12 +64,21 @@ body {
         --text-md: 800 1.5rem/140% var(--font-family);
         --text-sm:  800 1rem/140% var(--font-family);
         --text-sm2: 600 1rem/140% var(--font-family);
-        --text-sm3: 400 1rem/160% var(--font-family);
+        --text-sm3: 400 0.875rem/160% var(--font-family);
 
         --py-header: 1.25rem 1.25rem;
-        --py-highlights: 1.25rem 5rem;
-        --py-most-read: 1rem 6.5rem;
+        --py-highlights: 1.25rem 4rem;
+        --py-most-read: 1rem 4rem;
 
         --px-lg: 2rem;
+    }
+
+    main {
+        grid-template-columns: 2fr 1.5fr;
+
+       grid-template-areas: 
+       "highlights highlights"
+       "most-read most-read"
+       "ia other";
     }
 }
