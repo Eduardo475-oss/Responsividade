@@ -1,0 +1,12 @@
+aside {    
+    & img:first-child {
+        margin-left: 3.5rem;
+        width: 12.6875rem;
+        height: 2rem;
+    }
+
+    & img {
+        width: 19.5rem;
+        height: 14.5rem;
+    }
+}
