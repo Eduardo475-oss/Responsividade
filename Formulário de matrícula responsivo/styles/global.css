@@ -38,8 +38,8 @@
     --font-family:  "Poppins", sans-serif;
     --text-lg: 800 2rem/120% var(--font-family);
     --text-md: 800 1.5rem/120% var(--font-family);
-    --text-sub: 800 1.25rem/120% var(--font-family);
-    --text-sm: 800 1rem/120% var(--font-family);
+    --text-sub: 600 1.25rem/120% var(--font-family);
+    --text-sm: 400 1rem/120% var(--font-family);
 
     --py-lg: 3rem;
     --py-md: 1.5rem;
@@ -51,6 +51,7 @@
 body {
     background-color: var(--surface-primary);
     font: var(--text-sm);
+    color: var(--text-secondary);
 }
 
 .bg-color {
