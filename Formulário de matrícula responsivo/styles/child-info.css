@@ -1,0 +1,6 @@
+#child-informations {
+    & legend {
+        font: var(--text-sub);
+        color: var(--text-primary);
+    }
+}
