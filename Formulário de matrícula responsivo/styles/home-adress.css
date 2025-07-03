@@ -1,0 +1,6 @@
+#home-adress {
+    & legend {
+        font: var(--text-sub);
+        color: var(--text-primary);
+    }
+}
