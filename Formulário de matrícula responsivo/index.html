@@ -12,10 +12,11 @@
     <title>Formulário de Matrícula</title>
 </head>
 <body>
-    <div class="bg-color">
-        <aside>
-            <div class="container py-md grid items-center justify-center">
-                <img src="assets/Logo.png" alt="">
+    <div id="app">
+        <div class="bg-color">
+            <aside>
+                <div class="container py-md grid items-center justify-center">
+                    <img src="assets/Logo.png" alt="">
                 
                     <img src="assets/pana.png" alt="" class="margin-t">
                 </div>
@@ -23,44 +24,44 @@
         </div>
         
         <main>
-        <header class="container py-md grid">
-            <div class="flex gap items-center">
-                <img src="assets/icons/arrow-left-02.svg" alt="">
-                <span>Voltar</span>
-            </div>
+            <header class="container py-md grid">
+                <div class="flex gap items-center">
+                    <img src="assets/icons/arrow-left-02.svg" alt="">
+                    <span>Voltar</span>
+                </div>
+                
+                <div class="margin-t grid gap-0.5">
+                    <h2>Formulário de Matrícula</h2>
+                    <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+                </div>
+            </header>
             
-            <div class="margin-t grid gap-0.5">
-                <h2>Formulário de Matrícula</h2>
-                <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
-            </div>
-        </header>
-
-        <form action="post" enctype="multipart/form-data">
-            <section id="child-informations">
-                <div class="container py-md grid">
-                <legend>Informações da criança</legend>
+            <form action="post" enctype="multipart/form-data">
+                <section id="child-informations">
+                    <div class="container py-md grid">
+                        <legend>Informações da criança</legend>
+                        
+                        <div class="grid margin-t">
+                            <label for="fullname">Nome Completo</label>
+                            <input
+                            class="margin-i"
+                            id="fullname" 
+                            type="text" 
+                            placeholder="Qual o nome da criança?">
+                        </div>
                 
-                <div class="grid margin-t">
-                    <label for="fullname">Nome Completo</label>
-                    <input
-                    class="margin-i"
-                    id="fullname" 
-                    type="text" 
-                    placeholder="Qual o nome da criança?">
-                </div>
-                
-                <div class="grid margin-t">
-                    <label for="birth">Data de nascimento</label>
-                    <input
-                    class="margin-i"
-                    id="birth" 
-                    type="date">
-                </div>
-                
-                <div class="grid margin-t">
-                    <label for="sex">Sexo</label>
-                    <select name="sex" id="sex" class="margin-i">
-                        <option value="female">Feminino</option>
+                        <div class="grid margin-t">
+                            <label for="birth">Data de nascimento</label>
+                            <input
+                            class="margin-i"
+                            id="birth" 
+                            type="date">
+                        </div>
+                        
+                        <div class="grid margin-t">
+                            <label for="sex">Sexo</label>
+                            <select name="sex" id="sex" class="margin-i">
+                                <option value="female">Feminino</option>
                         <option value="male">Masculino</option>
                     </select>
                 </div>
@@ -78,12 +79,12 @@
                     <label for="birth-certificate">Certidão de nascimento</label>
                     <div class="dropzone">
                         <input type="file" class="margin-i">
-
+                        
                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M34.9552 18.0221C34.97 18.022 34.985 18.022 35 18.022C39.9706 18.022 44 22.0588 44 27.0386C44 31.6796 40.5 35.5016 36 36M34.9552 18.0221C34.9848 17.6921 35 17.3579 35 17.0202C35 10.9339 30.0752 6 24 6C18.2465 6 13.5247 10.4253 13.0408 16.0638M34.9552 18.0221C34.7506 20.2952 33.8572 22.3692 32.4856 24.033M13.0408 16.0638C7.96796 16.5475 4 20.8278 4 26.0366C4 30.8834 7.43552 34.9264 12 35.8546M13.0408 16.0638C13.3565 16.0337 13.6765 16.0183 14 16.0183C16.2516 16.0183 18.3295 16.7639 20.001 18.022" stroke="#D6D3D1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M24 26V42M24 26C22.5996 26 19.9831 29.9886 19 31M24 26C25.4004 26 28.017 29.9886 29 31" stroke="#D6D3D1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            
+                        </svg>
+                        
                         <p>
                             Clique aqui para selecionar arquivos
                         </p> 
@@ -91,7 +92,7 @@
                 </div>
             </div>
         </section>
-
+        
         <section id="home-adress">
             <div class="container py-md grid">
                 <legend>Endereço residencial</legend>
@@ -106,29 +107,29 @@
                         <img src="assets/icons/alert-circle.svg" alt="">
                         <span>Insira um CEP válido</span>
                     </div>
-            </div>
-            
-            
-            <div class="grid margin-t">
-                <label for="street">Rua</label>
-                <input type="text" id="street" 
-                class="margin-i">
-            </div>
-            
-            
-            <div class="grid margin-t">
-                <label for="number">Número</label>
-                <input type="number" id="number" 
-                class="margin-i">
-            </div>
-            
-            
-            <div class="grid margin-t">
-                <label for="city">Cidade</label>
-                <input type="text" id="city" 
-                class="margin-i"
-                required>
+                </div>
                 
+                
+                <div class="grid margin-t">
+                    <label for="street">Rua</label>
+                    <input type="text" id="street" 
+                    class="margin-i">
+                </div>
+                
+                
+                <div class="grid margin-t">
+                    <label for="number">Número</label>
+                    <input type="number" id="number" 
+                    class="margin-i">
+                </div>
+                
+                
+                <div class="grid margin-t">
+                    <label for="city">Cidade</label>
+                    <input type="text" id="city" 
+                    class="margin-i"
+                    required>
+                    
                 <div class="error margin-i">
                     <img src="assets/icons/alert-circle.svg" alt="">
                     <span>Insira uma Cidade válida</span>
@@ -148,30 +149,30 @@
                 </div>
             </div>
         </div>
-        </section>
-
-        <section id="info-responsible">
-            <div class="container py-md">
-                <legend>Informações do responsável</legend>
+    </section>
+    
+    <section id="info-responsible">
+        <div class="container py-md">
+            <legend>Informações do responsável</legend>
+            
+            <div class="grid margin-t">
+                <label for="name-responsible">Nome do responsável</label>
+                <input type="text" id="name-responsible" class="margin-i">
+                <small class="margin-i">Principal responsável legal e contato de emergência</small>
+            </div>
+            
+            <div class="grid margin-t">
+                <label for="phone">Telefone</label>
+                <input type="tel" id="phone"
+                required 
+                placeholder="(10) 9 8765-4321"
+                class="margin-i">
                 
-                <div class="grid margin-t">
-                    <label for="name-responsible">Nome do responsável</label>
-                    <input type="text" id="name-responsible" class="margin-i">
-                    <small class="margin-i">Principal responsável legal e contato de emergência</small>
+                <div class="error margin-i">
+                    <img src="assets/icons/alert-circle.svg" alt="">
+                    <span>Insira um telefone válido</span>
                 </div>
-
-                <div class="grid margin-t">
-                    <label for="phone">Telefone</label>
-                    <input type="tel" id="phone"
-                    required 
-                    placeholder="(10) 9 8765-4321"
-                    class="margin-i">
-
-                    <div class="error">
-                        <img src="assets/icons/alert-circle.svg" alt="">
-                        <span>Insira um telefone válido</span>
-                    </div>
-                </div>
+            </div>
 
                 <div class="grid margin-t">
                     <label for="e-mail">E-mail</label>
@@ -179,15 +180,114 @@
                     required 
                     placeholder="papailegal123"
                     class="margin-i">
-
-                    <div class="error">
+                    
+                    <div class="error margin-i">
                         <img src="assets/icons/alert-circle.svg" alt="">
                         <span>Insira um e-mail válido</span>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section id="enrollment-options">
+            <div class="container py-md">
+                <legend>Opções de matrícula</legend>
+                
+                <div class="grid margin-t">
+                    <label>Selecione o turno de estudo</label>
+
+                    <div class="radio-wrapper flex margin-t">
+                        <div class="radio-inner grid">
+                            <div class="radio-img"></div>
+                            <input type="radio"
+                            name="study-shift"
+                            id="morning"
+                            value="morning">
+                            <img src="assets/icons/sun-cloud-02.svg" alt="">
+                            <label for="morning">Manhã</label>
+                        </div>
+
+                        <div class="radio-inner grid">
+                            <div class="radio-img"></div>
+                            <input type="radio"
+                            name="study-shift"
+                            id="evening"
+                            value="evening">
+                            <img src="assets/icons/sun-02.svg" alt="">
+                            <label for="evening">Tarde</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="margin-t">
+                    <label>Em qual esporte você gostaria de inscrever seu filho?</label>
+
+                    <div class="radio-wrapper margin-t">
+                        <div class="radio-inner grid">
+                            <div class="radio-img"></div>
+                            <input type="radio"
+                            name="sport"
+                            id="football"
+                            value="football">
+                            <img src="assets/icons/football.svg" alt="">
+                            <label for="football">Futebol</label>
+                        </div>
+
+                        <div class="radio-inner grid">
+                            <div class="radio-img"></div>
+                            <input type="radio"
+                            name="sport"
+                            id="basketball"
+                            value="basketball">
+                            <img src="assets/icons/basketball-02.svg" alt="">
+                            <label for="basketball">Basquete</label>
+                        </div>
+
+                        <div class="radio-inner grid">
+                            <div class="radio-img"></div>
+                            <input type="radio"
+                            name="sport"
+                            id="swimming"
+                            value="swimming">
+                            <img src="assets/icons/swimming.svg" alt="">
+                            <label for="swimming">Natação</label>
+                        </div>
+
+                        <div class="radio-inner grid">
+                            <div class="radio-img"></div>
+                            <input type="radio"
+                            name="sport"
+                            id="yoga"
+                            value="yoga">
+                            <img src="assets/icons/yoga-02.svg" alt="">
+                            <label for="yoga">Yoga</label>
+                        </div>
+
+                        <div class="radio-inner grid">
+                            <div class="radio-img"></div>
+                            <input type="radio"
+                            name="sport"
+                            id="volleyball"
+                            value="volleyball">
+                            <img src="assets/icons/volleyball.svg" alt="">
+                            <label for="volleyball">Volley</label>
+                        </div>
+
+                        <div class="radio-inner grid">
+                            <div class="radio-img"></div>
+                            <input type="radio"
+                            name="sport"
+                            id="boxing"
+                            value="boxing">
+                            <img src="assets/icons/boxing-glove-01.svg" alt="">
+                            <label for="boxing">Boxe</label>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
     </form>
 </main>
+</div>
 </body>
 </html>

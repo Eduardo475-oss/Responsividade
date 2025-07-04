@@ -18,3 +18,10 @@
         color: var(--text-primary);
     }
 }
+
+#enrollment-options {
+    & legend {
+        font: var(--text-sub);
+        color: var(--text-primary);
+    }
+}
