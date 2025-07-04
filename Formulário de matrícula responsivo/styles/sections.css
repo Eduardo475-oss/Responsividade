@@ -1,0 +1,20 @@
+#child-informations {
+    & legend {
+        font: var(--text-sub);
+        color: var(--text-primary);
+    }
+}
+
+#home-adress {
+    & legend {
+        font: var(--text-sub);
+        color: var(--text-primary);
+    }
+}
+
+#info-responsible {
+    & legend {
+        font: var(--text-sub);
+        color: var(--text-primary);
+    }
+}

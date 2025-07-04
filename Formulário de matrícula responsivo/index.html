@@ -149,6 +149,44 @@
             </div>
         </div>
         </section>
+
+        <section id="info-responsible">
+            <div class="container py-md">
+                <legend>Informações do responsável</legend>
+                
+                <div class="grid margin-t">
+                    <label for="name-responsible">Nome do responsável</label>
+                    <input type="text" id="name-responsible" class="margin-i">
+                    <small class="margin-i">Principal responsável legal e contato de emergência</small>
+                </div>
+
+                <div class="grid margin-t">
+                    <label for="phone">Telefone</label>
+                    <input type="tel" id="phone"
+                    required 
+                    placeholder="(10) 9 8765-4321"
+                    class="margin-i">
+
+                    <div class="error">
+                        <img src="assets/icons/alert-circle.svg" alt="">
+                        <span>Insira um telefone válido</span>
+                    </div>
+                </div>
+
+                <div class="grid margin-t">
+                    <label for="e-mail">E-mail</label>
+                    <input type="email" id="e-mail"
+                    required 
+                    placeholder="papailegal123"
+                    class="margin-i">
+
+                    <div class="error">
+                        <img src="assets/icons/alert-circle.svg" alt="">
+                        <span>Insira um e-mail válido</span>
+                    </div>
+                </div>
+            </div>
+        </section>
     </form>
 </main>
 </body>
